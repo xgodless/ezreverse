@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; script-src 'self'; img-src 'self'; connect-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>Вариант 3 — КР № 2</title>
+  <link rel="stylesheet" href="kr2-assets/styles.css">
+  <script src="kr2-assets/solver.js" defer></script>
+</head>
+<body>
+  <header class="masthead">
+    <div class="wrap masthead-inner"><a href="index.html" class="brand">МиСКЗИ</a><span>Контрольная № 2</span></div>
+  </header>
+  
+  <main class="wrap">
+    <nav aria-label="Варианты" class="variant-nav"><a href="variant-1.html" aria-label="Вариант 1">1</a><a href="variant-2.html" aria-label="Вариант 2">2</a><a href="variant-3.html" aria-label="Вариант 3" aria-current="page">3</a><a href="variant-4.html" aria-label="Вариант 4">4</a><a href="variant-5.html" aria-label="Вариант 5">5</a><a href="variant-6.html" aria-label="Вариант 6">6</a><a href="custom.html" aria-label="Свои данные">Свои данные</a></nav>
+    <div class="intro worksheet-intro"><p class="course">Рекуррентные последовательности и конечные поля</p><h1>Вариант 3</h1></div>
+    <nav aria-label="Части работы" class="part-nav"><a href="#part-1">Часть 1</a><a href="#part-2">Часть 2</a></nav>
+    <noscript><p>Для расчётов включите JavaScript. Условия и фотографии доступны ниже.</p></noscript>
+    <section class="part" id="part-1"><h2>Часть 1</h2><article class="task" id="minimal">
+      <p class="task-number">Задание 1</p>
+      <h3>Минимальное рекуррентное соотношение</h3>
+      <p class="instruction">Найдите минимальное линейное соотношение для периодической последовательности и постройте регистр с обратной связью.</p>
+      <form class="calculator" data-solver="minimal" autocomplete="off">
+        <div class="fields"><label class="field"><span>Простой модуль p</span>
+      <input name="modulus" value="7" placeholder="7" inputmode="numeric" required maxlength="512" spellcheck="false" autocapitalize="off">
+    </label><label class="field"><span>Повторяющийся блок</span>
+      <input name="period" value="2, 3, 3, 0, 5, 1" placeholder="0, 2, 2, 6, 3, 1"  required maxlength="512" spellcheck="false" autocapitalize="off">
+    </label></div>
+        <button type="submit">Рассчитать</button>
+      </form>
+      <div class="result" aria-live="polite" hidden></div>
+    </article><section class="photos"><h3>Условие и тетрадь</h3><div class="photo-grid"><a class="photo-card sheet" href="kr2-assets/photos/3/1/sheet.thumb.webp">
+          <img src="kr2-assets/photos/3/1/sheet.thumb.webp" alt="условие" loading="lazy" decoding="async">
+          <span>Условие</span>
+        </a><a class="photo-card" href="kr2-assets/photos/3/1/p1.thumb.webp">
+          <img src="kr2-assets/photos/3/1/p1.thumb.webp" alt="тетрадь, стр. 1" loading="lazy" decoding="async">
+          <span>Тетрадь, стр. 1</span><small class="note">В исходнике отмечена ошибка</small>
+        </a><a class="photo-card" href="kr2-assets/photos/3/1/p2.thumb.webp">
+          <img src="kr2-assets/photos/3/1/p2.thumb.webp" alt="тетрадь, стр. 2" loading="lazy" decoding="async">
+          <span>Тетрадь, стр. 2</span><small class="note">В исходнике отмечена ошибка</small>
+        </a><a class="photo-card" href="kr2-assets/photos/3/1/p3.thumb.webp">
+          <img src="kr2-assets/photos/3/1/p3.thumb.webp" alt="тетрадь, стр. 3" loading="lazy" decoding="async">
+          <span>Тетрадь, стр. 3</span>
+        </a></div></section></section>
+    <section class="part" id="part-2"><h2>Часть 2</h2><article class="task" id="stream">
+      <p class="task-number">Задание 1</p>
+      <h3>Шифр на рекуррентной последовательности</h3>
+      <p class="instruction">Зашифруйте и расшифруйте строки над A–Z и +. Найдите характеристический многочлен, порядок матрицы и период ключа. Коэффициенты вводятся для sₙ, sₙ₊₁ и sₙ₊₂ по порядку.</p>
+      <form class="calculator" data-solver="stream" autocomplete="off">
+        <div class="fields"><label class="field"><span>Коэффициенты рекурсии</span>
+      <input name="coefficients" value="1 0 2" placeholder="1 0 1"  required maxlength="512" spellcheck="false" autocapitalize="off">
+    </label><label class="field"><span>Начальные значения s₀, s₁, s₂</span>
+      <input name="seed" value="0 0 1" placeholder="0 0 1"  required maxlength="512" spellcheck="false" autocapitalize="off">
+    </label><label class="field"><span>Открытый текст</span>
+      <input name="plain" value="VIMVIREPELLERELICET" placeholder="A–Z и +"  required maxlength="512" spellcheck="false" autocapitalize="off">
+    </label><label class="field"><span>Шифртекст</span>
+      <input name="cipher" value="TIG+VUEOXXTMPFN" placeholder="A–Z и +"  required maxlength="512" spellcheck="false" autocapitalize="off">
+    </label></div>
+        <button type="submit">Рассчитать</button>
+      </form>
+      <div class="result" aria-live="polite" hidden></div>
+    </article><article class="task" id="field">
+      <p class="task-number">Задание 2</p>
+      <h3>Минимальный многочлен в F₁₆</h3>
+      <p class="instruction">Найдите минимальный многочлен элемента β и постройте двоичную последовательность максимального периода.</p>
+      <form class="calculator" data-solver="field" autocomplete="off">
+        <div class="fields"><label class="field"><span>Многочлен g(x) над ℤ₂</span>
+      <input name="g" value="x^4+x+1" placeholder="x^4+x+1"  required maxlength="512" spellcheck="false" autocapitalize="off">
+    </label><label class="field"><span>Элемент β</span>
+      <input name="beta" value="α^3+α+1" placeholder="α^2+α"  required maxlength="512" spellcheck="false" autocapitalize="off">
+    </label></div>
+        <button type="submit">Рассчитать</button>
+      </form>
+      <div class="result" aria-live="polite" hidden></div>
+    </article><section class="photos"><h3>Условие и тетрадь</h3><div class="photo-grid"><a class="photo-card sheet" href="kr2-assets/photos/3/2/sheet.thumb.webp">
+          <img src="kr2-assets/photos/3/2/sheet.thumb.webp" alt="условие" loading="lazy" decoding="async">
+          <span>Условие</span>
+        </a><a class="photo-card" href="kr2-assets/photos/3/2/p1.thumb.webp">
+          <img src="kr2-assets/photos/3/2/p1.thumb.webp" alt="тетрадь, стр. 1" loading="lazy" decoding="async">
+          <span>Тетрадь, стр. 1</span>
+        </a><a class="photo-card" href="kr2-assets/photos/3/2/p2.thumb.webp">
+          <img src="kr2-assets/photos/3/2/p2.thumb.webp" alt="тетрадь, стр. 2" loading="lazy" decoding="async">
+          <span>Тетрадь, стр. 2</span><small class="note">В исходнике отмечена ошибка</small>
+        </a><a class="photo-card" href="kr2-assets/photos/3/2/p3.thumb.webp">
+          <img src="kr2-assets/photos/3/2/p3.thumb.webp" alt="тетрадь, стр. 3" loading="lazy" decoding="async">
+          <span>Тетрадь, стр. 3</span>
+        </a></div></section></section>
+  </main>
+</body>
+</html>
